@@ -1,0 +1,530 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amit.leave1.aprvtab1">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/aprlist"></ListView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vdetail"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/pf"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_marginBottom="@dimen/pad_10dp"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:background="@android:color/holo_purple" />
+
+            <TableLayout
+                android:layout_below="@+id/pf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Name" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprlname" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Id" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprlid" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Designation" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprldesig" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Department" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprldept" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Applied On" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/ap_on" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Type Of Leave" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprltl" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/from_row">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="From" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprlfrom" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/to_row">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="To" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprlto" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/on_row">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="On" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/onD" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/when_row">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="When" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/pr_pol" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="No of Days" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprlnd" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/fa_row">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Financial Assistance" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fassist" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/amt_row">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Amount" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/famt" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Reason" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprlrsn" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Alternate" />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprlalt" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/aprvHOD_row">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="#ff8c8c8c"
+                        android:text="Approved By HOD On " />
+
+                    <TextView
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/aprv_hod" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <RadioButton
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:padding="3dp"
+                        android:id="@+id/ch1"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:text="ACCEPT" />
+
+                    <RadioButton
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:padding="3dp"
+                        android:id="@+id/ch2"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:text="REJECT" />
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:id="@+id/rsn"
+                        android:hint="Mention Reason"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:id="@+id/dnbtn"
+                        android:drawableLeft="@mipmap/accept"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:text="DONE" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:id="@+id/cancelbtn"
+                        android:textSize="18dp"
+                        android:drawableLeft="@mipmap/reject"
+                        android:textColor="@android:color/black"
+                        android:text="CANCEL" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/emptymessege"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+</RelativeLayout>

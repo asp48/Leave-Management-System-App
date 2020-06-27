@@ -1,0 +1,395 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/background"
+    tools:context="com.example.amit.leave1.SelfDetail">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Type of Leave" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/tl" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/from_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="From" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/lfrom" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/to_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="To" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/lto" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/on_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="On" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/on" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/when_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="When" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/when" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="No of Days" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/ndl" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/fa_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Financial Assistance" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/fasst" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/amt_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Amount" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/amt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:id="@+id/rsnl"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/pad_30dp"
+                android:drawableRight="@drawable/sortdown"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Reason" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/lrsn" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Alternative" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/altfac" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/aprvHOD_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Approved By HOD On" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/aprv_hod" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/aprvVP_row">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Approved By VP/P On" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/aprv_vp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Status" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="3dp"
+                android:id="@+id/status"
+                android:textSize="18dp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/pad_30dp"
+                android:drawableRight="@drawable/sortdown"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/rrj"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="Reason for Rejection" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:id="@+id/rr"
+                android:textSize="18dp"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

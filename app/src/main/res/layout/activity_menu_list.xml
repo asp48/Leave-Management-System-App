@@ -1,0 +1,355 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.amit.leave1.MenuList">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:baselineAligned="false"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:text="APPLY LEAVE"
+                    android:textSize="25dp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/apply"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/button3"
+                    android:paddingBottom="20dp"
+                    android:drawableBottom="@mipmap/applyg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:text="HISTORY"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/history"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button3"
+                    android:drawableBottom="@mipmap/historyg"
+                    android:paddingBottom="20dp" />
+
+                <Button
+                    android:textSize="18dp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/chp"
+                    android:layout_weight="0.5"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/button3"
+                    android:drawableBottom="@mipmap/keyg"
+                    android:paddingBottom="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawer"
+        android:layout_height="match_parent"
+        android:background="@color/bg_register"
+        android:layout_gravity="start">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:layout_marginBottom="@dimen/pad_10dp"
+                    android:id="@+id/pf"
+                    android:clickable="true"
+                    android:onClick="choose"
+                    android:scaleType="fitXY" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:layout_marginBottom="@dimen/pad_10dp"
+                    android:id="@+id/progressBar"
+                    android:layout_alignTop="@+id/pf"
+                    android:layout_alignLeft="@+id/pf"
+                    android:layout_alignBottom="@+id/pf"
+                    android:layout_alignRight="@+id/pf" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/pf">
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Name" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/pname"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Username" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/tuname"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="ID" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/pid"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Designation" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/pdesig"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Department" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/pdept"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Mobile" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/pmobile"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Office" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/toffice"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Email" />
+
+                        <TextView
+                            android:nestedScrollingEnabled="false"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/pemail"
+                            android:singleLine="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_weight="0.2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:padding="3dp"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@color/input_register_hint"
+                            android:text="Address" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:padding="3dp"
+                            android:id="@+id/address"
+                            android:maxLines="3"
+                            android:scrollHorizontally="true"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:textColor="@android:color/white" />
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

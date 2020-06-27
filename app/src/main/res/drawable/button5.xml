@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="30dip" />
+            <stroke android:width="2dip" android:color="@color/btn_logout_bg" />
+            <gradient android:angle="-90" android:startColor="@color/btn_logout_bg" android:endColor="@color/btn_logout_bg" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="30dip" />
+            <stroke android:width="2dip" android:color="@color/btn_logout_bg2" />
+            <gradient android:angle="-90" android:startColor="@color/btn_logout_bg2" android:endColor="@color/btn_logout_bg2" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/listclr">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:cropToPadding="true"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbar"
+            android:layout_alignTop="@+id/icon"
+            android:layout_alignBottom="@+id/icon"
+            android:layout_alignLeft="@+id/icon"
+            android:layout_alignRight="@+id/icon" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/aprvstatus"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:cropToPadding="true"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_toLeftOf="@+id/aprvstatus"
+            android:layout_alignBottom="@+id/icon">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:paddingLeft="15dp"
+                android:gravity="left|center_vertical"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/empid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical|left"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.25" />
+
+            <TextView
+                android:id="@+id/desgnation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:gravity="left|center_vertical"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.25" />
+
+            <TextView
+                android:id="@+id/dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:gravity="left|center_vertical"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

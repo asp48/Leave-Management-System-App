@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">e-LMS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_menu_list">MenuList</string>
+    <string name="title_activity_navdrawer">navdrawer</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_statistics">Statistics</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_admin_menu_list">AdminMenuList</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_self_detail">SelfDetail</string>
+    <string name="title_activity_apply_leave">ApplyLeave</string>
+    <string name="leave">Type of Leave:</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="number">No. of days:</string>
+    <string name="reason">Reason:</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="title_activity_approval">Approval</string>
+    <string name="title_activity_aprvtab1">aprvtab1</string>
+    <string name="title_activity_aprvtab2">aprvtab2</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="pre">Pre-Lunch</string>
+    <string name="post">Post-Lunch</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_profile_approval">ProfileApproval</string>
+    <string name="title_activity_status_bar">StatusBar</string>
+
+</resources>

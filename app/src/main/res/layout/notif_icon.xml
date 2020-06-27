@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:clickable="true"
+    android:id="@+id/notif_ic"
+    android:layout_gravity="center"
+    style="@android:style/Widget.ActionButton">
+
+    <ImageView
+        android:id="@+id/bell"
+        android:src="@mipmap/notif"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="21dp"
+        android:textSize="13sp"
+        android:textColor="#ffffffff"
+        android:layout_height="18dp"
+        android:gravity="center"
+        android:layout_alignRight="@id/bell"
+        android:background="@drawable/bell_circle" />
+</RelativeLayout>

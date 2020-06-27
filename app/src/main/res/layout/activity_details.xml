@@ -1,0 +1,338 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amit.leave1.Details">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/detail"></ListView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vprofile"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_marginBottom="@dimen/pad_10dp"
+                android:id="@+id/pf"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TableLayout
+                android:layout_below="@+id/pf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Name" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fname" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Username" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/funame" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="ID" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fid" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Designation" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fdesig" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Mobile" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fmob" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Office Number" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/office" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Email" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fmail" />
+                </TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/input_register_hint"
+                    android:text="Address" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/fadr" />
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Casual Leave" />
+
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="5dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fcl" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:singleLine="true"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Restricted Leave" />
+
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="5dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/frl" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:padding="3dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/input_register_hint"
+                        android:text="Earned Leave" />
+
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:padding="5dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/fel" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="0.2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:padding="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:text="Accept"
+                        android:id="@+id/accept" />
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:padding="3dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Reject"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/rej" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/emptymessege"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+</RelativeLayout>
