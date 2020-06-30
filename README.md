@@ -19,11 +19,11 @@ In the existing system many colleges follow manual procedure in which employees 
 1. **Staff**  
 - Ex: Professor, Associate Professor, Assistant Professor etc) and Non Faculty(Librarian, Clerk, Lab Instructor etc.  
 - Functionalities  
-    1.To apply for leave  
-    2.History : Previously applied leave applications along with status  
-    3.Check leftover leaves  
-    4.Get notifications for recently applied leaves   
-    5.Managing profile information.  
+    1. To apply for leave  
+    2. History : Previously applied leave applications along with status  
+    3. Check leftover leaves  
+    4. Get notifications for recently applied leaves   
+    5. Managing profile information.  
 
 2. **HOD**
 - Functionalities
@@ -33,7 +33,8 @@ In the existing system many colleges follow manual procedure in which employees 
     4. Dashboard : View list of employees under his department, who are on leave today or any particular date
     5. Functionalities of common staff
 
-3. **Super Admin**
+3. **Super Admin**  
+- Ex: Vice Principal/Principal
 - Functionalities
     1. Approve profile of newly registered HODs, Dean etc. in the college.
     2. Approve leave applications of employees forwarded through HODs of respective departments and leave applications from HODs and Dean.
