@@ -3,9 +3,9 @@ An Android application which automates the leave management process in Education
 
 ## Existing System
 
-In the existing system many colleges follow manual procedure in which employees fill an application form and submit to the respective authorities and have to keep inquiring in the office regarding the status. Hence it is a time consuming process. Establishment section people have to manually feed application data into computer for record maintenance. All these things make leave management, a tedious task.
+In the existing system many colleges follow manual procedure in which employees fill an application form and submit to the respective authorities and have to keep inquiring in the department office regarding the status. Hence it is a time consuming process. Establishment section people have to manually feed application data into computer for record maintenance. All these things make leave management, a tedious task.
 
-## Advantage of Proposed Solution  
+## Advantages of Proposed Solution  
 
 - apply for leave at any time, from any place.
 - get instant update of application status
@@ -30,7 +30,7 @@ In the existing system many colleges follow manual procedure in which employees 
     1. Profile Approval : Approve profile of newly registered employees in the department
     2. Leave Approval : Approve leave applications of employees from his department and forward it to Vice Principal or Principal in case type of leave is RH, EL,OOD and SPCL.
     3. Faculty and Non Faculty List : View number of leaves applied and  complete profile information of all employees under his department and edit if appropriate
-    4. Dashboard : View list of employees on leave under his department on respective days
+    4. Dashboard : View list of employees under his department, who are on leave today or any particular date
     5. Functionalities of common staff
 
 3. **Super Admin**
@@ -38,7 +38,7 @@ In the existing system many colleges follow manual procedure in which employees 
     1. Approve profile of newly registered HODs, Dean etc. in the college.
     2. Approve leave applications of employees forwarded through HODs of respective departments and leave applications from HODs and Dean.
     3. View number of leaves applied and complete profile information of all employees in college and edit if appropriate.
-    4. View list of employees on leave under any department on respective days
+    4. View list of employees on leave under any department on any particular date
 
 ## Screenshots  
 
