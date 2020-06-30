@@ -16,14 +16,14 @@ In the existing system many colleges follow manual procedure in which employees 
 
 ## Actors
 
-1. **Staff**
-- Ex: Professor, Associate Professor, Assistant Professor etc) and Non Faculty(Librarian, Clerk, Lab Instructor etc.
-- Functionalities
-    1.To apply for leave
-    2.History : Previously applied leave applications along with status
-    3.Check leftover leaves
-    4.Get notifications for recently applied leaves 
-    5.Managing profile information.
+1. **Staff**  
+- Ex: Professor, Associate Professor, Assistant Professor etc) and Non Faculty(Librarian, Clerk, Lab Instructor etc.  
+- Functionalities  
+    1.To apply for leave  
+    2.History : Previously applied leave applications along with status  
+    3.Check leftover leaves  
+    4.Get notifications for recently applied leaves   
+    5.Managing profile information.  
 
 2. **HOD**
 - Functionalities
