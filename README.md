@@ -37,8 +37,8 @@ In the existing system many colleges follow manual procedure in which employees 
 - Ex: Vice Principal/Principal
 - Functionalities
     1. Approve profile of newly registered HODs, Dean etc. in the college.
-    2. Approve leave applications of employees forwarded through HODs of respective departments and leave applications from HODs and Dean.
-    3. View number of leaves applied and complete profile information of all employees in college and edit if appropriate.
+    2. Approve leave applications of the employees forwarded through HODs of respective departments and leave applications from HODs and Dean.
+    3. View number of leaves applied and complete profile information of all employees in the college and edit if appropriate.
     4. View list of employees on leave under any department on any particular date
 
 ## Screenshots  
